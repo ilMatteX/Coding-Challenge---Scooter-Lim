@@ -1,0 +1,187 @@
+/* Coding Challenge - Scooter Lim */
+
+/* essenziali */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font */
+    font-family: "Roboto", serif;
+    font-style: normal;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* sfondo */
+
+body {
+    background-image: url("img/bg.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* ------------------------------------------------- */
+/* container */
+
+.container {
+    /* corpo */
+    width: 65%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3%;
+
+    /* position */
+    position: relative;
+    margin: auto;
+    top: 3%;
+}
+
+/* ------------------------------------------------- */
+/* header */
+
+/* img */
+header > img {
+    display: block;
+    width: 20%;
+    margin: auto;
+    padding-top: 7%;
+}
+
+/* titolo */
+
+header > h1 {
+    text-align: center;
+    color: rgb(0, 255, 0);
+    font-weight: 700;
+    padding-top: 1%;
+}
+
+/* ------------------------------------------------- */
+/* nav */
+
+nav {
+    /* position */
+    position: relative;
+    display: block;
+    margin: auto;
+    margin-top: 1%;
+
+    /* dimensioni */
+    width: 80%;
+    height: 7%;
+
+    /* sfondo */
+    background-color: rgb(0, 255, 0);
+}
+
+/* pulsanti */
+nav > button {
+    /* position */
+    position: absolute;
+    top: 25%;
+    /* dimensioni */
+    height: 50%;    
+    /* bordi */
+    border-radius: 5%;
+    padding: 0.2%;
+    /* stile */
+    text-shadow: 1px 1px 5px rgb(0, 255, 0);
+}
+
+/* PROBLEMA CENTRARE I BUTTON! */
+/* ho usato position absolute, però devo andare A TENTATIVI... */
+button.a {
+    left: 37.2%;
+}
+button.b {
+    left: 43.2%;
+}
+button.c {
+    left: 57.5%;
+}
+
+/* ------------------------------------------------- */
+/* main */
+
+main {
+    /* dimensioni max */
+    width: 80%;
+    /* per le tre sezioni cerco di dividere questa altezza in tre*/
+    height: 48%;
+
+    /* background-color: white; */
+
+    /* position */
+    position: relative;
+    left: 10%;
+
+    /* testo bianco */
+    color: white;
+}
+
+main h1 {
+    display: inline-block;
+}
+
+/* sezione AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
+section {
+    /* dimensioni */
+    width: 100%;
+    height: 28%;
+}
+
+/* questo vale per tutti i primi titoletti così lascia lo spazio da sopra */
+section > .primo {
+    margin-top: 2%;
+    margin-left: 0.3%;
+}
+
+/* stile testo */
+.a > .primo {
+    text-shadow: 1px 1px 10px orange;
+}
+
+section > .via {
+    margin: 0.5% 0%;
+}
+
+.carica {
+    position: absolute;
+    /* dimensioni */
+    height: 7%;
+    /* bordi */
+    border-radius: 5px;
+}
+
+.carica.prima {
+    background-color: orange;
+    width: 30%;
+}
+
+/* sezione BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB */
+/* stile testo */
+.b > .primo {
+    text-shadow: 1px 1px 10px rgb(0, 255, 0);
+}
+
+.carica.seconda {
+    background-color: rgb(0, 255, 0);
+    width: 60%;
+}
+
+
+/* sezione CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC */
+.c > .primo {
+    text-shadow: 1px 1px 10px red;
+}
+
+.carica.terza {
+    background-color: red;
+    width: 14%;
+}
+
+/* ------------------------------------------------- */
